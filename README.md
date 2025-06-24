@@ -1,5 +1,7 @@
 # zip-delete
-To add a "Zip and Delete" option to your Windows right-click context menu, allowing you to compress a folder into a ZIP file and then delete the original folder, follow these steps:
+To add a "Zip and Delete" option to your Windows right-click context menu, allowing you to compress a folder into a ZIP file and then delete the original folder
+This requires 7zip to be installed x64 and upto date. 
+follow these steps:
 1. Create the Batch Script:
 First, you'll need to create a batch script that performs the desired action.
     • Open Notepad:
