@@ -65,20 +65,24 @@ Next, you'll add an entry to the Windows Explorer context menu to execute this s
         ◦ Press Win + R, type regedit, and press Enter.
     • Navigate to the Directory Key:
         ◦ For all users:
-            ▪ HKEY_CLASSES_ROOT\Directory\shell
+        HKEY_CLASSES_ROOT\Directory\shell
         ◦ For the current user only:
-            ▪ HKEY_CURRENT_USER\Software\Classes\directory\shell
+        HKEY_CURRENT_USER\Software\Classes\directory\shell
     • Create a New Key:
         ◦ Right-click on shell, select New > Key, and name it ZipAndDelete.
+   
     • Set the Menu Item Name:
         ◦ With the ZipAndDelete key selected, double-click the (Default) value in the right pane and set it to Zip and Delete.
+   
     • Add an Icon (Optional):
         ◦ Right-click in the right pane, select New > String Value, and name it Icon.
-        ◦ Double-click Icon and set its value to the path of an icon file, e.g., "C:\Program Files\7-Zip\7zG.exe".
-    • Create the Command Subkey:
-        ◦ Right-click on the ZipAndDelete key, select New > Key, and name it command.
-    • Set the Command to Execute:
-        ◦ With the command key selected, double-click the (Default) value in the right pane and set it to the path of your batch script, e.g., C:\Program Files\7-Zip\ZipAndDelete.bat "%1".
+    Double-click Icon and set its value to the path of an icon file, e.g., "C:\Program Files\7-Zip\7zG.exe".
+   Create the Command Subkey:
+   Right-click on the ZipAndDelete key, select New > Key, and name it command.
+
+   Set the Command to Execute:
+   With the command key selected, double-click the (Default) value in the right pane and set it to the path of your batch script, e.g., C:\Program Files\7-Zip\ZipAndDelete.bat "%1".
+
 Important Considerations:
     • Backup the Registry:
         ◦ Before making changes, it's advisable to back up the registry. In the Registry Editor, select File > Export and save the backup.
